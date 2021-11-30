@@ -1,0 +1,117 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+$main: hsl(215, 51%, 70%);
+$accent: hsl(178, 100%, 50%);
+
+$blue-main-bg: hsl(217, 54%, 11%);
+$blue-card-bg: hsl(216, 50%, 16%);
+$blue-line: hsl(215, 32%, 27%);
+
+$border-radius: .5rem;
+$border-radius-sm: .2rem;
+$border-radius-lg: .3rem;
+$border-radius-pill: 50rem;
+
+$body-bg: $blue-main-bg;
+$body-color: $main;
+$card-bg: $blue-card-bg;
+$card-spacer-y: 1.5rem;
+$card-spacer-x: 1.5rem;
+$card-border-radius: $border-radius * 3;
+$card-border-color: $blue-line;
+$card-border-width: 0;
+$headings-font-weight: 600;
+
+$thumbnail-padding: 0;
+$thumbnail-bg: $body-bg;
+$thumbnail-border-width: .1rem;
+$thumbnail-border-color: white;
+$thumbnail-box-shadow: 0;
+
+$font-family-sans-serif: 'Outfit', sans-serif;
+
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/containers";
+@import "../node_modules/bootstrap/scss/grid";
+@import "../node_modules/bootstrap/scss/card";
+@import "../node_modules/bootstrap/scss/images";
+
+@import "../node_modules/bootstrap/scss/utilities";
+@import "../node_modules/bootstrap/scss/utilities/api";
+
+html,
+body {
+    height: 100%;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 400;
+}
+
+a:hover {
+    color: $accent;
+}
+
+hr {
+    color: $blue-line;
+    margin: 1rem 0;
+    opacity: 1;
+}
+
+.max350{
+    max-width: 370px;
+}
+
+.coin {
+    color: $accent;
+    font-weight: 600;
+}
+
+.date {
+    font-weight: 400;
+}
+
+.avatar {
+    height: 2rem;
+}
+
+figure {
+	background: $accent;
+}
+
+.view-icon {
+    opacity: 0;
+    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+figure:hover .view-icon {
+    opacity: 1;
+}
+
+.card-image {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.card-image:hover {
+	opacity: .5;
+}
+
